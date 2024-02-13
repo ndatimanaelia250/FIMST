@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html>
+<body>
+
+<h1>Foste's Project</h1>
+
+<button onclick="typeWriter()">We! Helve Kanda Urebe Surprise</button>
+
+<p id="demo"></p>
+
+<script>
+var i = 0;
+var txt = 'Mani Aka Ka WebPage Ni Aka FOSTE FIMST Ariko Wakora Inpect Ukareba Waguuan Helve Wabibonye Ko Aka Gakode Karenze Urabivugaho IKI!!!.';
+var speed = 60;
+
+function typeWriter() {
+  if (i < txt.length) {
+    document.getElementById("demo").innerHTML += txt.charAt(i);
+    i++;
+    setTimeout(typeWriter, speed);
+  }
+}
+</script>
+
+</body>
+</html>
